@@ -1,0 +1,167 @@
+@media only screen and (max-width:480px){
+    
+    .secondnav{
+        display: none;
+    }
+    nav > li{
+        display: flex;
+    }
+    .second-responsive-nav{
+        height: 400px   ;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+justify-content: space-around;
+        top: 0%;
+        /* padding:5%; */
+        left: 0%;
+        background-color: white;
+        width: 100%;
+        /* border: 1px solid red; */
+        /* gap: 10px; */
+    }
+    .allinonecomponent{
+        height: 300px;
+       
+    }
+    .second-responsive-nav > .secondinnernav{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .thirdinnernav > button{
+        margin: 10px;
+        width: 120px;
+    }
+    .aboutourcompany {
+        margin-top: 55%;
+        border: 2px soli red;
+    }
+    .aboutourcompany > .leftinfo{
+        display: none;
+    }
+    .aboutourcompany > .rightinfo{
+        /* display: none; */
+        width: 100%;
+    }
+    .headingdetails > .firstcarinfo {
+        display: flex;
+        align-items: center;
+    }
+
+    .firstcarinfo > li{
+        font-size: 50px;
+    }
+    .firstcarinfo > p{
+      text-align: center;
+    }
+.ModelData{
+    margin-top: 60%;
+    /* border: 2px solid red; */
+}
+.aboutplanning .upperinfo > h4{
+    font-size: 20px;
+}
+.aboutplanning .upperinfo > h1{
+    font-size: 29px;
+}
+.aboutplanning > .bottominfo{
+    flex-direction: column;
+    width: 100%;
+}
+.bottominfo > .info1{
+    width: 100%;
+    margin: 5px 0;
+    padding: 0 10px;
+}
+.info1 > li{
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+  /* border-radius: 50%;
+  padding:5px  10px; */
+}
+.info1 > h2{
+    font-size: 24px;
+}
+.info1 > p{
+    font-size: 18px;
+}
+.upperdetailofcar{
+    margin-top: 50px;
+    padding: 0 10px;
+}
+.upperdetailofcar > h1{
+    font-size: 25px;
+    text-align: center;
+}
+.upperdetailofcar > p{
+    text-align: center;
+}
+.carpick{
+    flex-direction: column;
+    /* border: 1px solid red; */
+    height: min-content;
+    padding: 0 10px;
+}
+.carpick > .carcontainer{
+    width: 100%;
+
+}
+.carcontainer > .leftcontainer{
+    height: 25px;
+}
+.leftcontainer > button{
+    font-size: 16px;
+}
+.carpick > .centercontainer{
+    width: 100%;
+}
+.carpick > .thirdcontainer{
+    width: 100%;
+}
+
+
+.contact-container {
+    width: 100%;
+    margin-top: 70%;
+
+}
+
+.main-contact-sec {
+    width: 100%;
+
+}
+
+.main-contact-sec>.map {
+    height: 200px;
+}
+
+.map>iframe {
+    height: 100%;
+}
+
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.contact-page>.info-page {
+    width: 100%;
+
+}
+
+.contact-page>.form-page {
+    width: 100%;
+    padding: 5px;
+}
+.text-about > h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.text-about > p{
+    font-weight: 500;
+    color: rgb(176, 176, 176);
+}
+}

@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Blinker:wght@300;400;600;700&family=Lato:wght@900&family=Nunito:wght@200&family=Quicksand:wght@300&family=Roboto+Mono&family=Roboto:wght@700;900&family=Rubik:wght@300&family=Ubuntu&display=swap');
+
+.App{
+    position: relative;
+}
+/* Header css */
+.header{
+    width: 100%;
+    height: 70px;
+    /* border: 2px solid red; */
+}
+.header > nav{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+nav .firstnav{
+    width: 180px;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.firstnav > img{
+    width: 50%;
+    object-fit: contain;
+}
+.firstnav > p{
+   font-size: 24px; 
+   font-weight: bolder;
+}
+.firstnav >p>span{
+   font-size: 24px; 
+    color: rgb(250, 51, 51);
+}
+.secondnav{
+    display: flex;
+    width: 70%;
+    padding: 0 30px;
+    justify-content: space-between;    
+    /* border: 2px solid red; */
+    align-items: center;
+}
+.secondnav > .secondinnernav{
+    display: flex;
+    gap: 30px;
+}
+.secondinnernav > .links{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+nav> li{
+    font-size: 24px;
+    display: none;
+}
+.secondinnernav > .links:hover{
+    color: rgb(255, 70, 70);
+}
+.thirdinnernav > button{
+    padding: 10px;
+    width: 100px;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    color: white;
+    text-shadow: 0 0 3px white;
+    background-color: rgb(253, 52, 52);
+}
+
+.allinonecomponent{
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    z-index: -10;
+}
+.allinonecomponent > img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    opacity: .09;
+}
+.allinonecomponent > .data{
+    width: 100%;
+    height: 30%;
+    /* border: 1px solid red; */
+
+}
+.data > .details{
+    height: 100%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+.details > h1{
+    font-size: 35px;
+}
+.details > h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+.aboutourcompany{
+    margin-top: 35% ;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 500px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.aboutourcompany > .leftinfo{
+    width: 30%;
+    height:100% ;
+
+}
+.leftinfo > img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.aboutourcompany > .rightinfo{
+    width: 40%;
+    /* border: 1px solid red; */
+    height:100% ;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    justify-content: center;
+
+}
+.rightinfo > .headings {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.headings > h1{
+    font-size: 35px;
+    color: rgb(253, 45, 45);
+}
+.headings > h2{
+    font-weight: 600;
+}
+.headings > p{
+    line-height: 1.2em;
+    font-size: 18px;
+    color: rgb(114, 114, 114);
+}
+.rightinfo > .headingdetails{
+    display: flex;
+    margin: 20px 0 0 0 ;
+    /* border: 1px solid red; */
+    width: 100%;
+    justify-content: space-around;
+    
+    gap:18px;
+}
+
+.headingdetails > .firstcarinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.firstcarinfo > li{
+    font-size: 60px;
+    color: rgb(249, 49, 49);
+}
+.firstcarinfo > p{
+    font-weight: 800;
+    font-size: 20px;
+}
+.aboutplanning{
+    width: 100%;
+    margin-top: 7%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutplanning > .upperinfo{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;align-items: center;
+    gap: 15px;
+    flex-direction: column;
+}
+.upperinfo >h4{
+    font-size: 24px;
+}
+.upperinfo >h1{
+    font-size: 39px;
+}
+.aboutplanning > .bottominfo{
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+    justify-content: space-around;
+}
+.bottominfo > .info1{
+    width: 20%;
+    display: flex;
+    gap: 15px;
+    /* border: 1px solid red; */
+    align-items: center;
+    flex-direction: column;
+}
+.info1 > li{
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+  border-radius: 50%;
+  padding:5px  10px;
+    background-color: rgba(253, 123, 123, 0.443);
+    color: rgb(249, 49, 49);
+    display: flex;justify-content: center;
+    align-items: center;
+  
+}
+.info1 >h2{
+    font-size: 29px;
+}
+.info1 >p{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(126, 126, 126);
+
+}
+.carpick{
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    height: 350px;
+    /* border: 1px solid red; */
+}
+
+.carpick > .carcontainer{
+    display: flex;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 20%;
+    gap: 2px;
+    flex-direction: column;
+}
+.carcontainer > .leftcontainer{
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid red; */
+
+}
+.leftcontainer > button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(244, 70, 70);
+}
+
+.leftcontainer > button:hover{
+    background-color: rgb(253, 15, 15);
+    text-shadow:  0 0 3px white;
+}
+.carpick > .centercontainer{
+    width:40% ;
+    height: 100%;
+
+}
+.centercontainer> img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.carpick > .thirdcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 20%;
+    height: 100%;
+    border: 1px solid rgb(255, 69, 69);
+}
+.thirdcontainer > h2{
+    background-color: rgb(253, 15, 15);
+color: white;
+padding: 10px 0;
+text-align: center;
+}
+.thirdcontainer > .thirdinnercontainer{
+height: 100%;
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+/* padding: 0 0 0 10px; */
+gap: 4px;
+/* border: 1px solid red; */
+width: 100%;
+justify-content: center;
+}
+.thirdinnercontainer > p{
+    height: 32px;
+text-align: center;
+font-weight: 700;
+display: flex;
+width: 100%;
+padding: 2px  0;
+/* border: 1px solid red; */
+justify-content: space-around;
+}
+p > new{
+    width: 33%;
+}
+p > line{
+    width: 33%;
+}
+.thirdinnercontainer> p > span{
+    color: rgb(255, 29, 29);
+    width: 39%;
+    font-size: 15px;
+}
+.upperdetailofcar{
+    margin: 5% 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+}
+.upperdetailofcar > h3{
+    font-weight: 600;
+}
+.upperdetailofcar > h1{
+    font-size: 40px;
+}
+.upperdetailofcar > h1 >span{
+    color: rgb(255, 42, 42);
+}
+.upperdetailofcar > p{
+    color: rgb(122, 122, 122);
+}
+.rating{
+    color: rgb(255, 217, 0);
+    font-size: 20px;
+}
+.ModelData{
+    display: flex;
+    margin-top: 30%;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ModelData > .fetchdeddata
+{
+    width: 300px;
+    height:400px;
+    border: 1px solid rgba(125, 125, 125, 0.311);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    
+}
+.fetchdeddata > .img{
+    width: 100%;
+    height: 50% ;
+    }
+.img > img{
+    width: 100%;
+    height: 100% ;
+    object-fit: contain;
+}
+.fetchdeddata > p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.fetchdeddata > hr{
+    width: 80%;
+    margin: 10px 0;
+    color: rgba(166, 166, 166, 0.42);
+}
+.fetchdeddata > button{
+    background-color: rgb(255, 73, 73);
+    border: none;
+    outline: none;
+    color: #ffffff;
+    width: 170px;
+    padding: 15px 20px;
+    font-size: 16px;
+    /* margin-bottom: 10px; */
+}
+
+/* contact container css */
+.contact-container {
+    display: flex;
+    margin-top: 30%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Blinker', sans-serif;
+}
+
+.main-contact-sec {
+    width: 100%;
+    /* max-width: 1200px; */
+    /* border: 1px solid red; */
+}
+
+.contact-page {
+    display: flex;
+    gap: 4%;
+    font-family: 'Blinker', sans-serif;
+    margin: 2% 0;
+    padding: 0 20px;
+}
+
+.contact-page>.info-page {
+    width: 48%;
+    /* border: 1px solid red; */
+    padding: 10px;
+}
+.info-page>.text-about>
+p {
+    font-weight: lighter;
+    text-align: start;
+    color: rgb(184, 184, 184);
+    /* font-family: 'Barlow Condensed', sans-serif; */
+
+}
+.info-page>.text-about>h1{
+    font-weight: bolder;
+    text-align: start;
+    /* font-family: 'Barlow Condensed', sans-serif; */
+
+}
+.info-page>.icon {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon>h3 {
+    font-weight: 800;
+    font-weight: lighter;
+}
+
+.form-page {
+
+    width: 48%;
+    font-family: 'Blinker', sans-serif;
+
+    /* border: 1px solid red; */
+}
+.Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+label {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+input,
+textarea {
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: #e0e0e0;
+}
+
+.btn {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 19px;
+    background-color: rgb(255, 63, 63);
+    color: white;
+    text-shadow: 0 0 2px white;
+}
+
+.btn:hover {
+    box-shadow: 0 0 2px red, inset 0 0 rgb(248, 58, 58);
+}
+
