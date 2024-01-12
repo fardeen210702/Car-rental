@@ -1,8 +1,14 @@
 import React from 'react'
 
-function SinglePage() {
+
+function SinglePage(state) {
+  console.log(state,'state');
   return (
-    <div>SinglePage</div>
+    <div>
+      <h1>{state.car}</h1>
+      {/* <h2>{pick}</h2>
+      <h3>{drop}</h3> */}
+    </div>
   )
 }
 

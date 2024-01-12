@@ -20,6 +20,8 @@ const CAR_DATA = [
         air: "Yes",
         transmission: "Manual",
         fuel: "Diesel",
+        location:'Hyderabad'
+
       },
    
       {
@@ -34,6 +36,8 @@ const CAR_DATA = [
         air: "Yes",
         transmission: "Manual",
         fuel: "Gasoline",
+        location:'Jangaon'
+
       },
     
       {
@@ -48,6 +52,7 @@ const CAR_DATA = [
         air: "Yes",
         transmission: "Automatic",
         fuel: "Hybrid",
+        location:'Warangal'
       },
   
       {
@@ -62,6 +67,8 @@ const CAR_DATA = [
         air: "Yes",
         transmission: "Manual",
         fuel: "Diesel",
+        location:'Siddipet'
+
       },
    
       {
@@ -76,6 +83,8 @@ const CAR_DATA = [
         air: "Yes",
         transmission: "Manual",
         fuel: "Diesel",
+        location:'Khazipet'
+
       },
    
       {
@@ -90,6 +99,8 @@ const CAR_DATA = [
         air: "Yes",
         transmission: "Automatic",
         fuel: "Gasoline",
+        location:'Uppal'
+
       },
     ]
  

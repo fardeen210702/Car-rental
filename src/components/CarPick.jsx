@@ -20,7 +20,7 @@ function CarPick() {
             
             Data.map((el,index)=>{
                 return <div className="leftcontainer" key={index}>       
-                                    <button onClick={()=>handleAdd(el)} >{el.name}</button>
+                                    <button onMouseEnter={()=>handleAdd(el)} >{el.name}</button>
                             </div>
             })
         }

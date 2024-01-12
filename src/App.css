@@ -505,4 +505,74 @@ textarea {
 .btn:hover {
     box-shadow: 0 0 2px red, inset 0 0 rgb(248, 58, 58);
 }
+.selectcar{
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    align-items: center;
 
+}
+.selectcar > .selectingcarprocess{
+ width: 80%;
+ /* border: 1px solid black; */
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 10px;
+}
+.selectingcarprocess > form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* border: 1px solid rgb(0, 0, 255); */
+}
+form >.MAINOPTIONS{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-around;
+}
+.MAINOPTIONS >.options > select{
+    /* border: 1px solid green; */
+    padding: 10px;
+    width: 200px;
+}
+.time{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+}
+.time > .pickupdate > input{
+    width: 200px;
+
+}
+.time > input{
+    width: 200px;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 48, 48);
+    color: white;
+    font-size: 17px;
+}
+.selectingcarprocess > .cont>button{
+    margin-top: 20px;
+    padding: 10px;
+    width: 200px;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 48, 48);
+    color: white;
+    font-size: 17px;
+}
+.viewdetails{
+    position: absolute;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    background-color: rgb(255, 52, 52);
+    overflow-y: scroll;
+}
