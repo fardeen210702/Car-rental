@@ -164,4 +164,28 @@ justify-content: space-around;
     font-weight: 500;
     color: rgb(176, 176, 176);
 }
+.viewdetails > .bookeddetails > h1{
+font-size: 18px;
+}
+.bookeddetails > button{
+    font-size: 16px;
+}
+ .viewdetails >.viewinnerdetails{
+    flex-direction: column;
+    padding: 10px 0px;
+/* border: 1px solid red; */
+}
+.viewinnerdetails > .filleddetails{
+    width: 100%;
+    padding: 0 1px;
+}
+.filleddetails > h2{
+    font-size: 20px;
+}
+.viewinnerdetails > .filledcarimg{
+    width: 100%;
+}
+ .filleddetails >.innerfilleddetails > h1{
+    font-size: 17px;
+}
 }

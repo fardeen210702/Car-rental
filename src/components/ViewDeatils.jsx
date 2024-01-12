@@ -1,38 +1,52 @@
 import React, { useState } from 'react'
 import Data from '../Data'
+import { FaLocationDot } from "react-icons/fa6";
+import { RxCross1 } from "react-icons/rx";
 
-function ViewDeatils({state,setCut}) {
-    console.log(state,'statedata');
-    const {car, pick, drop, time, endtime} = state
-    console.log(car,'car');
+function ViewDeatils({ state, setCut }) {
+    console.log(state, 'statedata');
+    const { car, pick, drop, time, endtime } = state
+    console.log(car, 'car');
 
-   
-  return (
-    <>
-   <div className='viewdetails' >
-  <div className="containerrr">
 
-        <button onClick={()=>setCut(false)}>cut</button>
+    return (
+        <>
+            <div className='viewdetails' >
+                <div className="bookeddetails">
+                    <h1>Successful Reservation!!</h1>
+                    <button onClick={() => setCut(false)}><RxCross1/></button>
+                </div>
 
-        <h1>{car}</h1>
-        <h1>{pick}</h1>
-        <h1>{drop}</h1>
-        <h1>{time}</h1>
-        <h1>{endtime}</h1>
-        {
-            Data.map((el,index)=>{
-                return el.name == car && <img key={index} src={el.img} alt="" />
-            })
-        }
-    
-        </div>
-    
-    </div>
- 
-    
+                <div className="viewinnerdetails">
+                    <div className="filleddetails">
+                        <h2> Location and Date👉</h2>
+                        <div className="innerfilleddetails">
+                            <h1> <FaLocationDot/> Car Booked :- <span>{car =='' ? (<span className='span'>please fill out this section* </span>) : car}</span></h1>
+                            <h1><FaLocationDot/> Pick Car at :- <span>{pick =='' ? (<span className='span'>please fill out this section* </span>) : pick}</span></h1>
+                            <h1><FaLocationDot/> Destination :- <span>{drop =='' ? (<span className='span'>please fill out this section* </span>) : drop}</span></h1>
+                            <h1><FaLocationDot/> Pick up Date :- <span>{time =='' ? (<span className='span'>please fill out this section* </span>) : time}</span></h1>
+                            <h1><FaLocationDot/> Drop Date :- <span> {endtime =='' ? (<span className='span'>please fill out this section* </span>) : endtime}</span> </h1>
+                        </div>
+                    </div>
 
- </>
-  )
+                    <div className="filledcarimg">
+                        
+                        {
+                            Data.map((el, index) => {
+                                return el.name == car &&<img key={index} src={el.img} alt="" />
+
+                            })
+                        }
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </>
+    )
 }
 
 export default ViewDeatils

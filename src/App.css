@@ -533,6 +533,7 @@ form >.MAINOPTIONS{
     width: 100%;
     padding: 10px;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .MAINOPTIONS >.options > select{
     /* border: 1px solid green; */
@@ -543,6 +544,7 @@ form >.MAINOPTIONS{
     /* border: 1px solid red; */
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: flex-end;
 
 }
@@ -571,8 +573,85 @@ form >.MAINOPTIONS{
 .viewdetails{
     position: absolute;
     width: 80%;
+    height: 40%;
+    /* padding: 0 10px; */
+    border: 1px solid red;
     top: 10%;
     left: 10%;
-    background-color: rgb(255, 52, 52);
+    background-color: rgb(255, 255, 255);
     overflow-y: scroll;
+}
+
+.viewdetails > .bookeddetails{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px ;
+    color: white;
+    background-color: rgb(255, 46, 46);
+}
+.bookeddetails > h1{
+    font-weight: 500;
+
+}
+.bookeddetails > button{
+    width: 40px;
+    font-size: 30px;
+    color: white;
+    border: none;
+    background-color: rgb(254, 44, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.viewdetails > .viewinnerdetails{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: min-content;
+    display: flex;
+    padding: 10px 50px;
+}
+.viewinnerdetails > .filleddetails {
+    display: flex;
+    width: 50%;
+    padding:0 10px;
+
+    flex-direction: column;
+}
+.filleddetails > h2{
+    font-weight: 600;
+    color: rgb(251, 26, 26);
+}
+.innerfilleddetails{
+    display: flex;
+    margin: 15px 0;
+    flex-direction: column;
+    gap: 25px;
+}
+.filleddetails > .innerfilleddetails > h1{
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;align-items: center;
+    gap: 5px;
+}
+.innerfilleddetails > h1 > span{
+    color: rgb(249, 45, 45);
+    font-weight: 700;
+    padding-left: 5px;
+}
+.span{
+    color: purple;
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+.filledcarimg{
+    width: 50%;
+    /* border: 1px solid red; */
+
+}
+.filledcarimg > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }

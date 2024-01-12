@@ -109,6 +109,7 @@ function SelectCar() {
 
                             <label htmlFor="selectsecond">Pick up Point*</label>
                             <select name="selectsecond" id='selectsecond'>
+                               
                                 {
                                     Data.map((el, index) => {
                                         return <option key={index} value={el.location} onClick={() => setPickupPoint(el.location)} >{el.location}</option>
@@ -131,11 +132,11 @@ function SelectCar() {
                     <div className="time">
                         <div className="pickupdate">
                             <label htmlFor="pickup">Pickup Date</label>
-                            <input type="date" name='text' value={pickdate} onChange={updateFilter} />
+                            <input type="date" name='text' value={pickdate} onChange={updateFilter} required/>
                         </div>
                         <div className="pickupdate">
                             <label htmlFor="pickup">Drop Date</label>
-                            <input type="date" value={dropDate} onChange={updateFilter1} />
+                            <input type="date" value={dropDate} onChange={updateFilter1} required />
                         </div>
                     {/* <Link to={`/singlepage/:id`}>
                     </Link> */}
