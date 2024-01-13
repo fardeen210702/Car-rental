@@ -157,7 +157,7 @@ function SelectCar() {
             {
                 state.viewDetails && <>
                     {
-                        state.carDetails && <>{ cut &&               <ViewDeatils state={state.carDetails} setCut={setCut} />
+                        state.carDetails && <>{ cut &&<ViewDeatils state={state.carDetails} setCut={setCut} />
 
                         }
                         

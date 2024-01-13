@@ -7,7 +7,7 @@
     }
     nav > li{
         display: flex;
-        z-index: 10;
+        z-index: 1;
     }
     .second-responsive-nav{
         height: 400px   ;
@@ -167,6 +167,20 @@ justify-content: space-around;
     font-weight: 500;
     color: rgb(176, 176, 176);
 }
+.viewdetails{
+    width: 100%;
+    z-index: 2;
+    left: 0%;
+    /* top: 4%; */
+}
+.selectcar {
+    padding: 1px 1px;
+
+}
+.selectcar > .selectingcarprocess{
+    padding: 1px;
+    width: 100%;
+}
 .viewdetails > .bookeddetails > h1{
 font-size: 18px;
 }
@@ -189,8 +203,12 @@ font-size: 18px;
     width: 100%;
 }
  .filleddetails >.innerfilleddetails > h1{
-    font-size: 17px;
+    font-size: 12px;
 }
+ .filleddetails >.innerfilleddetails > h1> span >.span{
+    font-size: 12px;
+}
+
 .landingpage{
     height: min-content;
 }
