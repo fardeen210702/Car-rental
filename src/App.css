@@ -27,6 +27,7 @@
 nav .firstnav{
     width: 180px;
     height: 100%;
+    color: black;
     /* border: 1px solid red; */
     display: flex;
     align-items: center;
@@ -909,4 +910,14 @@ hr{
 .footer-link-container > a > i{
     font-size: 35px;
     color: rgba(255, 0, 0, 0.372);
+}
+
+button{
+    cursor: pointer;
+}
+input{
+    cursor: pointer;
+}
+select{
+    cursor: pointer;
 }

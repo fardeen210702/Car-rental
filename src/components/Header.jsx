@@ -9,10 +9,13 @@ function Header() {
 
     <div className='header'>
         <nav>
-            <div className="firstnav">
+            {/* <div className="">  */}
+            <Link className='firstnav' to='/home'>
+
                 <img src={logo} alt="" width='70px' />
                 <p> <span>Rent</span> Us</p>
-            </div>
+            </Link>
+            {/* </div> */}
             <div className={toggle ? 'secondnav second-responsive-nav ' : 'secondnav'}>
 
             <div className="secondinnernav" onClick={()=>setToggle(false)}>

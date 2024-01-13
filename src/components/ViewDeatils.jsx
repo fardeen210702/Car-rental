@@ -7,7 +7,8 @@ import FormDetails from './FormDetails';
 function ViewDeatils({ state, setCut }) {
     console.log(state, 'statedata');
     const { car, pick, drop, time, endtime } = state
-    console.log(car, 'car');
+    // console.log(car, 'car');
+    // console.log(pick,'pick');
 
 
     return (

@@ -26,7 +26,7 @@ function SelectCar() {
 
     }
     const [state, dispatch] = useReducer(reducer, initialState)
-    console.log(state, 'state');
+    // console.log(state, 'state');
     function reducer(state, action) {
         switch (action.type) {
             case 'UPDATEDETAILS':
