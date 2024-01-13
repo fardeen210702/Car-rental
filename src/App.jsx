@@ -11,6 +11,8 @@ import '../src/responsiveness/phone.css'
 
 function App() {
   return (
+    <div className="MainApp">
+
     <div className='App'>
     <Router>
       <Header/>
@@ -25,6 +27,7 @@ function App() {
       </Routes>
     </Router>
       
+    </div>
     </div>
   )
 }

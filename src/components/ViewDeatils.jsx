@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Data from '../Data'
 import { FaLocationDot } from "react-icons/fa6";
 import { RxCross1 } from "react-icons/rx";
+import FormDetails from './FormDetails';
 
 function ViewDeatils({ state, setCut }) {
     console.log(state, 'statedata');
@@ -40,6 +41,7 @@ function ViewDeatils({ state, setCut }) {
                     </div>
 
                 </div>
+                <FormDetails setCut={setCut}/>
 
             </div>
 

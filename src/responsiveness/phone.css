@@ -227,4 +227,29 @@ width: 100%;}
 details > summary{
     font-size: 15px;
 }
+.firstform{
+    flex-direction: column;
+}
+.firstform > .input{
+    width: 100%;
+}
+.secondform{
+    flex-direction: column;
+}
+.secondform > .secondinput{
+    width: 100%;
+}
+.thirdform{
+    flex-direction: column;
+}
+.thirdform > .thirdinput{
+    width: 100%;
+}
+.selectcar > h1{
+    font-size: 24px;
+}
+.viewdetails {
+    top: 3%;
+    height: 80%;
+}
 }
