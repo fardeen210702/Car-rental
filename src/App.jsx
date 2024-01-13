@@ -8,6 +8,7 @@ import Error from './pages/Error'
 import Header from './components/Header'
 import './App.css'
 import '../src/responsiveness/phone.css'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/vehiclemodels' element={<VehicleModels/>}/>
         <Route path='*' element={<Error/>}/>
       </Routes>
+      <Footer/>
     </Router>
       
     </div>

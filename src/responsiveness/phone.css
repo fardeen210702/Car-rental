@@ -252,4 +252,16 @@ details > summary{
     top: 3%;
     height: 80%;
 }
+.thirdfooter{
+    flex-direction: column;
+    /* border: 1px solid red; */
+    /* align-items: center; */
+    text-align: center;
+}
+.customer-service{ 
+    margin: 5px 0;
+}
+.footer-link-container {
+    flex-direction: row;
+}
 }
