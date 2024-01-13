@@ -1,10 +1,13 @@
 @media only screen and (max-width:480px){
-    
+    /* .header{
+        background-color: white;
+    } */
     .secondnav{
         display: none;
     }
     nav > li{
         display: flex;
+        z-index: 10;
     }
     .second-responsive-nav{
         height: 400px   ;
@@ -13,7 +16,7 @@
         position: absolute;
 justify-content: space-around;
         top: 0%;
-        /* padding:5%; */
+        padding:5% 0 0 0 ;
         left: 0%;
         background-color: white;
         width: 100%;
@@ -187,5 +190,41 @@ font-size: 18px;
 }
  .filleddetails >.innerfilleddetails > h1{
     font-size: 17px;
+}
+.landingpage{
+    height: min-content;
+}
+ .landingpage >.leftlanding{
+    width: 100%;
+}
+.leftlanding > .innerlanding >h4{
+    font-size: 20px;
+}
+.leftlanding > .innerlanding >h2{
+    font-size: 25px;
+}
+.innerlanding > .btns > button{
+    width: 100px;
+    padding: 10px 1px;
+    font-size: 14px;
+}
+.rightlanding{
+    display: none;
+}
+.frequentlyasked > .questions > h1{
+    font-size: 25px;
+}
+.questions>p{
+    text-align: center;
+    color: rgb(165, 165, 165);
+}
+.frequentlyasked > .innerasked{
+    width: 100%;
+    padding: 1px;
+}
+.innerasked > details{
+width: 100%;}
+details > summary{
+    font-size: 15px;
 }
 }

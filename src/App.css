@@ -202,7 +202,7 @@ nav> li{
     font-size: 24px;
 }
 .upperinfo >h1{
-    font-size: 39px;
+    font-size: 33px;
 }
 .aboutplanning > .bottominfo{
     display: flex;
@@ -335,7 +335,7 @@ p > line{
     font-size: 15px;
 }
 .upperdetailofcar{
-    margin: 5% 0;
+    margin-top: 9% ;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -506,7 +506,7 @@ textarea {
     box-shadow: 0 0 2px red, inset 0 0 rgb(248, 58, 58);
 }
 .selectcar{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -519,6 +519,8 @@ textarea {
  /* border: 1px solid black; */
  display: flex;
  flex-direction: column;
+ background-color: white;
+
  align-items: center;
  padding: 10px;
 }
@@ -536,7 +538,7 @@ form >.MAINOPTIONS{
     flex-wrap: wrap;
 }
 .MAINOPTIONS >.options > select{
-    /* border: 1px solid green; */
+    border: none;
     padding: 10px;
     width: 200px;
 }
@@ -655,3 +657,144 @@ form >.MAINOPTIONS{
     height: 100%;
     object-fit: contain;
 }
+.landingpage{
+    width: 100%;
+    height: 480px;
+    padding:  0 20px;
+    display: flex;
+    margin-bottom: 2%;
+    
+}
+.landingpage > .leftlanding{
+width: 40%;
+height: 100%;
+/* border: 1px solid red; */
+padding: 10px;
+display: flex;align-items: center;
+}
+.landingpage > .rightlanding{
+width: 60%;
+position: relative;
+overflow: hidden;
+height: 100%;
+/* border: 1px solid red; */
+
+}
+.rightlanding > img{
+    width: 100%;
+height: 100%;
+    object-fit: contain;
+}
+.rightlanding > .circle{
+    border-radius: 50%;
+/* border: 1px solid red;     */
+position: absolute;
+padding: 30px 0;
+top: -24%;
+left: 15%;
+z-index: -1;
+background-color: rgba(254, 0, 0, 0.08);
+width: 800px;
+height: 700px;
+}
+.leftlanding > .innerlanding{
+    height: 70%;
+    width: 100%;
+display: flex;flex-direction: column;
+gap: 15px;
+    /* border: 1px solid red; */
+}
+.leftlanding > .innerlanding >h4 {
+    font-weight: 600;
+    font-size: 25px;
+}
+.leftlanding > .innerlanding >h2{
+    font-size: 45px;
+
+}
+.leftlanding > .innerlanding >h2 > span{
+    color: red;
+
+}
+.innerlanding > p{
+    color: rgb(145, 145, 145);
+}
+.innerlanding > .btns{
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+}
+.btns > button{
+    width: 150px;
+    padding: 15px 15px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: red;
+    text-shadow: 0 0 2px white;
+    border-radius: 2px;
+}
+.btns > button:hover{
+ box-shadow: 0 0 2px red;
+}
+ .btns >    .btn2{
+    background-color: black;
+    border: 2px solid black;
+}
+ .btns >    .btn2:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transition: all .2s ease;
+    border: 2px solid black;
+ box-shadow: 0 0 2px rgb(255, 255, 255);
+
+}
+.frequentlyasked{
+    width: 100%;
+    flex-direction: column;
+    height: min-content;
+    /* border: 1px solid red; */
+    background-color: #eaeaea;
+    padding: 10px;
+    display: flex;
+    margin-top: 5%;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.frequentlyasked > .questions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.frequentlyasked > .innerasked{
+    padding: 10px;
+    width: 70%;
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+.innerasked > details{
+    border: 1px solid rgba(154, 154, 154, 0.393);
+    width: 60%;
+    cursor: pointer;
+    padding: 20px;
+  
+}
+details > summary{
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+details > p{
+    padding: 10px;
+   color: rgb(147, 147, 147);
+}
+
+
+
