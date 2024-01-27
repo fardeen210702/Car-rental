@@ -5,7 +5,7 @@ import { RxCross1 } from "react-icons/rx";
 import FormDetails from './FormDetails';
 
 function ViewDeatils({ state, setCut }) {
-    console.log(state, 'statedata');
+    // console.log(state, 'statedata');
     const { car, pick, drop, time, endtime } = state
     // console.log(car, 'car');
     // console.log(pick,'pick');
@@ -23,7 +23,7 @@ function ViewDeatils({ state, setCut }) {
                     <div className="filleddetails">
                         <h2> Location and Date👉</h2>
                         <div className="innerfilleddetails">
-                            <h1> <FaLocationDot/> Car Booked :- <span>{car =='' ? (<span className='span'>please fill out this section* </span>) : car}</span></h1>
+                            <h1> <FaLocationDot/> Car Booked :- <span>{car =='' ? (<span className='span'>please fill out this section* </span>) : car===car}</span></h1>
                             <h1><FaLocationDot/> Pick Car at :- <span>{pick =='' ? (<span className='span'>please fill out this section* </span>) : pick}</span></h1>
                             <h1><FaLocationDot/> Destination :- <span>{drop =='' ? (<span className='span'>please fill out this section* </span>) : drop}</span></h1>
                             <h1><FaLocationDot/> Pick up Date :- <span>{time =='' ? (<span className='span'>please fill out this section* </span>) : time}</span></h1>
