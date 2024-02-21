@@ -5,11 +5,10 @@ import { RxCross1 } from "react-icons/rx";
 import FormDetails from './FormDetails';
 
 function ViewDeatils({ state, setCut }) {
-
-    // console.log(state, 'statedata');
-    // const { car, pick, drop, time, endtime } = state
-    // console.log(state.car, 'car');
-    // console.log(state.pick,'pick');
+    console.log(state, 'statedata');
+    const { car, pick, drop, time, endtime } = state
+    // console.log(car, 'car');
+    // console.log(pick,'pick');
 
 
     return (
@@ -24,11 +23,11 @@ function ViewDeatils({ state, setCut }) {
                     <div className="filleddetails">
                         <h2> Location and Date👉</h2>
                         <div className="innerfilleddetails">
-                            <h1> <FaLocationDot/> Car Booked :- <span>{state.car}</span></h1>
-                            <h1><FaLocationDot/> Pick Car at :- <span>{state.pick}</span></h1>
-                            <h1><FaLocationDot/> Destination :- <span>{state.drop }</span></h1>
-                            <h1><FaLocationDot/> Pick up Date :- <span>{state.time}</span></h1>
-                            <h1><FaLocationDot/> Drop Date :- <span> {state.endtime}</span> </h1>
+                            <h1> <FaLocationDot/> Car Booked :- <span>{car =='' ? (<span className='span'>please fill out this section* </span>) : car}</span></h1>
+                            <h1><FaLocationDot/> Pick Car at :- <span>{pick =='' ? (<span className='span'>please fill out this section* </span>) : pick}</span></h1>
+                            <h1><FaLocationDot/> Destination :- <span>{drop =='' ? (<span className='span'>please fill out this section* </span>) : drop}</span></h1>
+                            <h1><FaLocationDot/> Pick up Date :- <span>{time =='' ? (<span className='span'>please fill out this section* </span>) : time}</span></h1>
+                            <h1><FaLocationDot/> Drop Date :- <span> {endtime =='' ? (<span className='span'>please fill out this section* </span>) : endtime}</span> </h1>
                         </div>
                     </div>
 
@@ -36,7 +35,7 @@ function ViewDeatils({ state, setCut }) {
                         
                         {
                             Data.map((el, index) => {
-                                return el.name == state.car &&<img key={index} src={el.img} alt="" />
+                                return el.name == car &&<img key={index} src={el.img} alt="" />
 
                             })
                         }
