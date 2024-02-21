@@ -23,11 +23,11 @@ function ViewDeatils({ state, setCut }) {
                     <div className="filleddetails">
                         <h2> Location and Date👉</h2>
                         <div className="innerfilleddetails">
-                            <h1> <FaLocationDot/> Car Booked :- <span>{car =='' ? (<span className='span'>please fill out this section* </span>) : car}</span></h1>
-                            <h1><FaLocationDot/> Pick Car at :- <span>{pick =='' ? (<span className='span'>please fill out this section* </span>) : pick}</span></h1>
-                            <h1><FaLocationDot/> Destination :- <span>{drop =='' ? (<span className='span'>please fill out this section* </span>) : drop}</span></h1>
-                            <h1><FaLocationDot/> Pick up Date :- <span>{time =='' ? (<span className='span'>please fill out this section* </span>) : time}</span></h1>
-                            <h1><FaLocationDot/> Drop Date :- <span> {endtime =='' ? (<span className='span'>please fill out this section* </span>) : endtime}</span> </h1>
+                            <h1> <FaLocationDot/> Car Booked :- <span>{car}</span></h1>
+                            <h1><FaLocationDot/> Pick Car at :- <span>{pick}</span></h1>
+                            <h1><FaLocationDot/> Destination :- <span>{drop }</span></h1>
+                            <h1><FaLocationDot/> Pick up Date :- <span>{time}</span></h1>
+                            <h1><FaLocationDot/> Drop Date :- <span> {endtime}</span> </h1>
                         </div>
                     </div>
 
