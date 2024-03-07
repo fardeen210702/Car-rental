@@ -1,7 +1,6 @@
 import React, { useEffect, useReducer } from 'react'
 import { useState } from 'react'
 import Data from '../Data'
-import { Link } from 'react-router-dom'
 import ViewDeatils from './ViewDeatils'
 
 function SelectCar() {
@@ -86,6 +85,10 @@ function SelectCar() {
         setDropDate(value)
 
     }
+    const handleClick = () => {
+        handleCatchEntireDetails(selectedItem, pickupPoint, dropPoint, pickdate, dropDate);
+        dispatch({ type: 'updateToggle' });
+    };
 
     return (
         <div className='selectcar'>
@@ -140,7 +143,7 @@ function SelectCar() {
                         </div>
                     {/* <Link to={`/singlepage/:id`}>
                     </Link> */}
-                    <input type="submit" value={state.toggle ?'submitted' :'submit'} onClick={() => { handleCatchEntireDetails(selectedItem, pickupPoint, dropPoint, pickdate, dropDate); dispatch({ type: 'updateToggle' }) }} />
+                    <input type="submit" value={state.toggle ?'submitted' :'submit'} onClick={handleClick} />
                     </div>
                 </form>
                 {
