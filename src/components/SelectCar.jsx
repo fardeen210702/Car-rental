@@ -85,7 +85,8 @@ function SelectCar() {
         setDropDate(value)
 
     }
-    const handleClick = () => {
+    const handleClick = (e) => {
+        e.preventDefault()
         handleCatchEntireDetails(selectedItem, pickupPoint, dropPoint, pickdate, dropDate);
         dispatch({ type: 'updateToggle' });
     };
@@ -100,10 +101,10 @@ function SelectCar() {
                         <div className="options">
 
                             <label htmlFor="selectone">Select a Model*</label>
-                            <select  name="selectone" id='selectone'>
+                            <select  name="selectone" id='selectone' onChange={(e)=>setselectedItem(e.target.value)}>
                                 {
                                     Data.map((el, index) => {
-                                        return <option key={index} value={el.name} onClick={() => setselectedItem(el.name)}>{el.name}</option>
+                                        return <option key={index} >{el.name}</option>
                                     })
                                 }
                             </select>
@@ -111,11 +112,11 @@ function SelectCar() {
                         <div className="options">
 
                             <label htmlFor="selectsecond">Pick up Point*</label>
-                            <select name="selectsecond" id='selectsecond'>
+                            <select name="selectsecond" id='selectsecond' onChange={(e)=>setPickupPoint(e.target.value)}>
                                
                                 {
                                     Data.map((el, index) => {
-                                        return <option key={index} value={el.location} onClick={() => setPickupPoint(el.location)} >{el.location}</option>
+                                        return <option key={index} value={el.location}>{el.location}</option>
                                     })
                                 }
                             </select>
@@ -123,10 +124,10 @@ function SelectCar() {
                         <div className="options">
 
                             <label htmlFor="selectsecond">Drop Point*</label>
-                            <select name="selectsecond" id='selectsecond'>
+                            <select name="selectsecond" id='selectsecond' onChange={(e)=>setDropPoint(e.target.value)}>
                                 {
                                     Data.map((el, index) => {
-                                        return <option key={index} value={el.location} onClick={() => setDropPoint(el.location)}>{el.location}</option>
+                                        return <option key={index} >{el.location}</option>
                                     })
                                 }
                             </select>
